@@ -16,6 +16,9 @@ export function ScreenDialogoLibro() {
         defaultValues: libroSeleccionado,
     });
 
+    let codigolib = ''
+codigolib = (lsLibros.length < 9) ?  `LB-0${lsLibros.length+1}` : `LB-${lsLibros.length+1}`
+
     if (libroSeleccionado != null) {
         setValue("autor", libroSeleccionado.Data.autor);
         setValue("categoria", libroSeleccionado.Data.categoria);
@@ -23,13 +26,17 @@ export function ScreenDialogoLibro() {
         setValue("existencia", libroSeleccionado.Data.existencia);
         setValue("precio", libroSeleccionado.Data.precio);
         setValue("titulo", libroSeleccionado.Data.titulo);
-    }  
+    }
+    
+   
+    
+
+
 const onSubmit = (data, e) =>{
     Guardar(data, libroSeleccionado.Id);
 }
 
-let codigolib = ''
-codigolib = (lsLibros.length < 9) ?  `LB-0${lsLibros.length+1}` : `LB-${lsLibros.length+1}`
+
 
 return(
     <Modal isOpen={estadoDialogo}>

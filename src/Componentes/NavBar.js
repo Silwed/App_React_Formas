@@ -4,17 +4,17 @@ import '../navbar.css'
 export function NavBar(){
 
     return (
-        <header>
+        <header className='navtop'>
         <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3">
           <Container>
-            <NavbarBrand>Mi App</NavbarBrand>
+            <NavbarBrand className="text-white">Mi App</NavbarBrand>
             <Collapse className="d-sm-inline-flex flex-sm-row-reverse" navbar>
               <ul className="navbar-nav flex-grow">
                 <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/">Inicio</NavLink>
+                  <NavLink tag={Link} className="text-white" to="/">Inicio</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/Libros">Libros</NavLink>
+                  <NavLink tag={Link} className="text-white" to="/Libros">Libros</NavLink>
                 </NavItem>
               </ul>
             </Collapse>

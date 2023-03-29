@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css"; 
-import { Container, Table, Button} from 'reactstrap';
+import { Container,  Button} from 'reactstrap';
+import Table from "react-bootstrap/Table";
 import { useLibro } from "../Hooks/useLibro";
+import "../Style.css";
 
 
 export function ScreenListaLibros(){
@@ -11,8 +13,9 @@ export function ScreenListaLibros(){
     //const {estadoDialogo, setEstadoDialogo} = props.estado;
      
     return(
+    
         <Container>
-            <Table>
+            <Table striped bordered hover variant="dark">
                 <thead>
                     <tr>
                         <th>Titulo</th>

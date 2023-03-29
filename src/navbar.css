@@ -3,6 +3,10 @@ a.navbar-brand {
     text-align: center;
     word-break: break-all;
   }
+  .navtop{
+    background-color: #282c34;
+   
+  }
   
   html {
     font-size: 14px;
